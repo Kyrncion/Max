@@ -4,19 +4,19 @@ import { ICommand } from "wokcommands";
 
 export default {
   category: "Actions",
-  description: "Kills a friend!",
+  description: "Gets to a friend!",
 
   permissions: ["SEND_MESSAGES"],
 
   callback: async ({ message, text }) => {
     const person = message.mentions.users.first();
     if (!message.mentions.users.first())
-      return message.reply("You need to mention someone to kill them.");
+      return message.reply("You need to mention someone to beg to them.");
     const embed = new MessageEmbed()
       .setColor("#cbe3ff")
-      .setTitle("Uh Oh! Look Out!")
-      .setDescription(`${message.author.username} hugs ${person}!`)
-      .setImage("https://thumbs.gfycat.com/GrimSoupyBison-size_restricted.gif");
+      .setTitle("Pleasseee??")
+      .setDescription(`${message.author.username} begs to ${person}!`)
+      .setImage("https://c.tenor.com/PCC3xkC-3TkAAAAC/shiba-inu-cute.gif");
     const newMessage = await message.reply({
       embeds: [embed],
     });
