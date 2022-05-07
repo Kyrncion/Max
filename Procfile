@@ -1,1 +1,1 @@
-Worker: npm run max
+Worker: node ./src/max.ts
