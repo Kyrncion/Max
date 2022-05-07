@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "max.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "max": "nodemon ./src/max.ts"
