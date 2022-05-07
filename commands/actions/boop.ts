@@ -4,7 +4,7 @@ import { ICommand } from "wokcommands";
 
 export default {
   category: "Actions",
-  description: "**Boop!** a friend!",
+  description: "Boops a friend!",
 
   permissions: ["SEND_MESSAGES"],
 
