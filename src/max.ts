@@ -5,8 +5,6 @@ import path from "path";
 import dotenv from "dotenv";
 dotenv.config();
 
-import testSchema from "./src/test-schema";
-
 const client = new DiscordJS.Client({
   intents: [
     Intents.FLAGS.GUILDS,
@@ -38,11 +36,5 @@ client.on("ready", async () => {
     mongoUri: process.env.MONGO_URI,
   });
 
-  setTimeout(async () => {
-    await new testSchema({
-      message: "[SERVER] Max has been connected to the datalake.",
-    }).save();
-  }, 1000);
+  client.login(process.env.TOKEN);
 });
-
-client.login(process.env.TOKEN);
