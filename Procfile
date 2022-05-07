@@ -1,1 +1,1 @@
-worker: npm run max
+Worker: npm run max
