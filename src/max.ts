@@ -5,7 +5,7 @@ import path from "path";
 import dotenv from "dotenv";
 dotenv.config();
 
-import testSchema from "./test-schema";
+import testSchema from "./src/test-schema";
 
 const client = new DiscordJS.Client({
   intents: [
