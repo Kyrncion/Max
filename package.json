@@ -29,5 +29,8 @@
     "nodemon": "^2.0.16",
     "ts-node": "^10.7.0",
     "wokcommands": "^1.5.3"
+  },
+  "compilerOptions": {
+    "esModuleInterop": true
   }
 }
