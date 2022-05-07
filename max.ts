@@ -18,6 +18,16 @@ const client = new DiscordJS.Client({
 
 client.on("ready", async () => {
   console.log("Max wakes up and stretches his paws!");
+  client.user?.setPresence({
+    activities: [
+      {
+        name: "Minecraft | Max!Help",
+        type: "STREAMING",
+        url: "https://twitch.tv/kyrncion",
+      },
+    ],
+    status: "idle",
+  });
 
   new WOKCommands(client, {
     commandsDir: path.join(__dirname, "commands"),
