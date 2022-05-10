@@ -25,3 +25,7 @@ Mr. Fast, my website application development instructor, for his guidance and te
 Most importantly, I want to thank my friends for their encouraging remarks and inspiration to pursue this project, as well as for supplying me with recommendations for bot enhancements and research to accurately feed users accurate information in web development and mental health.
 
 *Thank you for checking out Max; I hope he grows into a bot that can greatly benefit and support users.*
+
+## Project Badges
+
+![APM](https://img.shields.io/apm/l/vim-mode?color=%23cbe3ff&label=License&style=flat-square)
