@@ -2,10 +2,10 @@
   "name": "max",
   "version": "1.0.0",
   "description": "",
-  "main": "max.js",
+  "main": "max.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "max": "nodemon ./src/max.js"
+    "max": "nodemon ./src/max.ts"
   },
   "repository": {
     "type": "git",
