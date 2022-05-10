@@ -3,9 +3,7 @@ import WOKCommands from "wokcommands";
 import mongoose from "mongoose";
 import path from "path";
 import dotenv from "dotenv";
-import express from 'express';
 import { PORT } from './config/constants';
-import { userRouter } from './routes';
 dotenv.config();
 
 const client = new DiscordJS.Client({
@@ -16,16 +14,6 @@ const client = new DiscordJS.Client({
     Intents.FLAGS.GUILD_PRESENCES,
   ],
 });
-
-// Heroku Connection
-
-const app = express();
-app.use(express.json());
-
-app.use('/users', userRouter);
-
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
 
   client.on("ready", async () => {
     console.log("Max wakes up and stretches his paws!");
@@ -50,5 +38,4 @@ app.listen(PORT, () => {
     });
 
     client.login(process.env.TOKEN);
-  })
-});
+  });
