@@ -18,7 +18,7 @@ These are the current additions I want to include into Max, with more to follow 
 - [ ] Implement and Explain All CSS3 Principles
 
 ## Special Thanks
-Thank you to Discord's development team for making the Discord API incredibly accessible, as well as the detailed documentations written to teach and educate developers in the process of developing bots using their API.
+Discord's development team for making the Discord API incredibly accessible, as well as the detailed documentations written to teach and educate developers in the process of developing bots using their API.
 
 Mr. Fast, my website application development instructor, for his guidance and teachings in teaching me and our class the knowledge incorporated into web development and inspiring me to pursue higher education in computer science as well as studying JavaScript in depth.
 
