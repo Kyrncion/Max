@@ -10,7 +10,7 @@ I have always tried to support friends and family members who are dealing with m
 These are the current additions I want to include into Max, with more to follow in due course!
 
 - [x] Primary Configuration
-- [ ] Connect Max to Heroku | Continuous Hosting
+- [ ] Connect Max to Heroku ( Continuous Hosting )
 - [X] Include Action Commands ( ex. Hugging )
 - [ ] Include Moderation Commands
 - [ ] Check-Ups for Personal Reports
