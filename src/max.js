@@ -1,4 +1,4 @@
-import DiscordJS, { Intents } from "discord.js";
+import DiscordJS, { Intents, RichPresenceAssets } from "discord.js";
 import WOKCommands from "wokcommands";
 import mongoose from "mongoose";
 import path from "path";
