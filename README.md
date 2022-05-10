@@ -1,4 +1,4 @@
-# Max
+# Who Is Max?
 Max is a **Typescript-based** Discord bot with many functionalities. He is both my learning curve for understanding [Discord's API](https://discord.com/developers/docs/intro) as well as my current passion project. While he is still in the initial phases of development, I have a lot of plans for him in the future. Max is **not designed** to be self-hosted, and this repository is **not intended** to teach you how to host or run Max locally. *You may use any of my code, with the exception of images, which are prohibited. Please do not advertise Max as your own product.*
 
 ## Why Did I Develop Max?
