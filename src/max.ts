@@ -5,6 +5,7 @@ import path from "path";
 import dotenv from "dotenv";
 import express from 'express';
 import { PORT } from './config/constants';
+import { userRouter } from './routes';
 dotenv.config();
 
 const client = new DiscordJS.Client({
@@ -21,30 +22,33 @@ const client = new DiscordJS.Client({
 const app = express();
 app.use(express.json());
 
+app.use('/users', userRouter);
+
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is listening on port ${PORT}`);
 
-client.on("ready", async () => {
-  console.log("Max wakes up and stretches his paws!");
-  client.user?.setPresence({
-    activities: [
-      {
-        name: "Minecraft | Max!Help",
-        type: "STREAMING",
-        url: "https://twitch.tv/kyrncion",
-      },
-    ],
-    status: "idle",
-  });
+  client.on("ready", async () => {
+    console.log("Max wakes up and stretches his paws!");
+    client.user?.setPresence({
+      activities: [
+        {
+          name: "Minecraft | Max!Help",
+          type: "STREAMING",
+          url: "https://twitch.tv/kyrncion",
+        },
+      ],
+      status: "idle",
+    });
 
-  new WOKCommands(client, {
-    commandsDir: path.join(__dirname, "commands"),
-    featuresDir: path.join(__dirname, "features"),
-    typeScript: true,
-    testServers: ["971973396105691156"],
-    botOwners: ["803402194882658314"],
-    mongoUri: process.env.MONGO_URI,
-  });
+    new WOKCommands(client, {
+      commandsDir: path.join(__dirname, "commands"),
+      featuresDir: path.join(__dirname, "features"),
+      typeScript: true,
+      testServers: ["971973396105691156"],
+      botOwners: ["803402194882658314"],
+      mongoUri: process.env.MONGO_URI,
+    });
 
-  client.login(process.env.TOKEN);
+    client.login(process.env.TOKEN);
+  })
 });
