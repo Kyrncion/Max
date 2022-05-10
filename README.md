@@ -28,4 +28,5 @@ Most importantly, I want to thank my friends for their encouraging remarks and i
 
 ## Project Badges
 
-![APM](https://img.shields.io/apm/l/vim-mode?color=%23cbe3ff&label=License&style=flat-square)
+![APM](https://img.shields.io/apm/l/vim-mode?color=%23cbe3ff&label=License&style=flat-square) 
+![AUR last modified](https://img.shields.io/aur/last-modified/google-chrome?color=%23cbe3ff&label=Last%20Edited&style=flat-square)
