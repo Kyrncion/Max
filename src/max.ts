@@ -3,6 +3,8 @@ import WOKCommands from "wokcommands";
 import mongoose from "mongoose";
 import path from "path";
 import dotenv from "dotenv";
+import express from 'express';
+import { PORT } from './config/constants';
 dotenv.config();
 
 const client = new DiscordJS.Client({
@@ -13,6 +15,14 @@ const client = new DiscordJS.Client({
     Intents.FLAGS.GUILD_PRESENCES,
   ],
 });
+
+// Heroku Connection
+
+const app = express();
+app.use(express.json());
+
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
 
 client.on("ready", async () => {
   console.log("Max wakes up and stretches his paws!");
